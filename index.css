@@ -1,0 +1,179 @@
+* {
+    border-style: none;
+    user-select: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+.hbp{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+    font-size: 40;
+    text-transform: uppercase;
+    color: black;
+}
+
+.rangin{
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 1000;
+}
+
+.rangin div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.test{
+    display: flex;
+    margin-top: 1000px;
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+}
+
+.fakemain{
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.main{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+  
+}
+
+
+.heart {
+  position: absolute;
+  height: 30px;
+  top: 0;
+  width: 30px;
+  background-image: url(/!images/Heart.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  z-index: 1;
+  transition: 10s;
+  z-index: 1;
+}
+
+.asl{
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 250px;
+  max-height: 400px;
+  background-color: rgb(0, 60, 255);
+  margin: auto;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.aks{
+  display: flex;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 0 auto;
+  top: 10px;
+  border-radius: 50%;
+  outline: 5px black solid;
+  transition: 800ms;
+  background-image: url(msg160647577-73768.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.matn{
+  position: absolute;
+  width: 100%;
+  height: 35%;
+  bottom: 0;
+  font-weight: bolder;
+  align-items: flex-end;
+  color: black;
+}
+
+.matn p span{
+  animation: chesmakzan 600ms infinite alternate-reverse;
+  opacity: 1;
+}
+
+@keyframes chesmakzan {
+  to{
+    opacity: 0;
+  }
+}
+
+
+.rotatingok{
+  animation: 4s infinite linear rotatingok;
+}
+.rotatingnotok{
+  animation: 4s infinite linear rotatingnotok;
+}
+.pain{
+  animation: 10s infinite linear pain;
+}
+.fadein{
+  animation: 1s fadein linear;
+}
+.fadeout{
+  animation: 1s fadeout linear;
+}
+
+@keyframes fadein {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes fadeout {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@keyframes rotatingok {
+  to{
+    transform:  rotate(360deg);
+  }
+}
+
+@keyframes rotatingnotok {
+  to{
+    transform:  rotate(-360deg);
+  }
+}
+
+@keyframes pain {
+  to{
+    top: 94%;
+  }
+}
