@@ -36,8 +36,8 @@ setInterval(() => {
     galb.style.scale = randoms;
     var x = Math.floor(Math.random() * window.innerWidth);
     var y = Math.floor(Math.random() * window.innerHeight);
-    galb.style.left = x - 100  + "px";
-    galb.style.top = y - 100  + "px";
+    galb.style.left = x  + "px";
+    galb.style.top = y  + "px";
     main.append(galb);
     galb.classList.add("fadein")
     setTimeout(() => {

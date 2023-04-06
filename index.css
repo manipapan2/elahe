@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    /* overflow-x: hidden; */
   }
   
   *:focus {
@@ -85,7 +86,7 @@
   height: 100%;
   background-color: #0093E9;
   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
+  overflow: hidden;
   
 }
 
