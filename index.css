@@ -85,14 +85,27 @@
   z-index: 1;
 }
 
-.asl{
+.ooo{
   position: relative;
   display: flex;
   width: 30%;
   height: 250px;
   max-height: 400px;
-  background-color: rgb(0, 60, 255);
+  background-color: red;
   margin: auto;
+  border-radius: 20px;
+  z-index: 11;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.asl{
+  position: absolute;
+  display: flex;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(0, 60, 255);
   border-radius: 20px;
   z-index: 10;
 }
@@ -176,4 +189,15 @@
   to{
     top: 94%;
   }
+}
+
+@media screen and (max-width:700px) {
+  .aks{
+    width: 80px;
+  height: 80px;
+  }
+
+  /* .asl{
+    width: 60%;
+  } */
 }

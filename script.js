@@ -22,6 +22,10 @@ ranginDivs.forEach(div => {
 });
 
 setInterval(() => {
+    document.querySelector("#ooo").style.backgroundColor=colors[Math.floor(Math.random() * colors.length)];
+}, 1000);
+
+setInterval(() => {
     var string1 = "rotatingok";
     var string2 = "rotatingnotok";
     var selectedString = Math.random() < 0.5 ? string1 : string2;
