@@ -14,6 +14,26 @@
     width: 100%;
     height: 100%;
   }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b1b8f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4161ac;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2764ee;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #004cff;
+}
   
 .hbp{
     position: absolute;
